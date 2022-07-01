@@ -5,6 +5,8 @@
 #include "wgetthread.h"
 #include <QThread>
 #include <QLabel>
+#include <QProcess>
+
 
 namespace Ui {
 class MainWindow;
@@ -17,11 +19,15 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    QString deb_res;
+
+    void clearAll();
+
+    QString compareVersion();
 
 private slots:
     void on_btn_check_clicked();
     void on_btn_copy_clicked();
+    void on_btn_compare_clicked();
 
 protected:
 
@@ -32,10 +38,12 @@ private:
     QThread *thread;
     QString statusBarMessage;
     QLabel *statusLabel;
+    QString deb_res;
 
 signals:
     void sig_startThread(QString);
-    void sig_startCountDown(int);
+    void sig_quitThread();
+
 };
 
 #endif // MAINWINDOW_H
