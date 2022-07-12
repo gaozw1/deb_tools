@@ -38,9 +38,9 @@
     <property name="currentIndex">
      <number>1</number>
     </property>
-    <widget class="QWidget" name="check">
+    <widget class="QWidget" name="tab_check">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>检查包名</string>
      </attribute>
      <widget class="QTextEdit" name="text_name">
       <property name="geometry">
@@ -166,9 +166,9 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="compare">
+    <widget class="QWidget" name="tab_compare">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>版本比较</string>
      </attribute>
      <widget class="QLabel" name="label_v2">
       <property name="geometry">

@@ -9,7 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
     statusLabel(new QLabel)
 {
     ui->setupUi(this);
-//    ui->lineEdit->setText("https://aptly.uniontech.com/pkg/security-update/release-candidate/5q2m5rGJ5Zyw5Yy65qGM6Z2i54mIQ1ZF5a6J5YWo5ryP5rSeMjItNC0zMjAyMi0wNC0yMCAyMDozNDoxNw/pool/");
 
     wgetThread = new WgetThread;
     thread = new QThread(this);
