@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     statusLabel(new QLabel)
 {
     ui->setupUi(this);
+    ui->tabWidget->setCurrentIndex(0);
 
     wgetThread = new WgetThread;
     thread = new QThread(this);
